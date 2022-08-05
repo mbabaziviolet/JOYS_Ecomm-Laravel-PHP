@@ -67,7 +67,7 @@ class ProductFormRequest extends FormRequest
                 
             ],
             'status'=> [
-                'required',
+                'nullable',
                 
             ],
             'meta_title'=> [
@@ -84,7 +84,10 @@ class ProductFormRequest extends FormRequest
                 'required',
                 'string'
             ],
-            
+            'image'=> [
+                'nullable',
+                // 'image|mimes:jpeg,png,jpg'
+            ],
         ];
     }
 }
